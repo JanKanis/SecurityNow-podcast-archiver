@@ -15,7 +15,7 @@ Usage:
 - put the generated snarchive.xml file in a public Dropbox/Google Drive/other cloud drive folder
 - point your podcast player at the link of the file
 
-To generate a shorter archive not going back to the beginning, edit the 'backto' year in this script
+To generate a shorter archive not going back to the beginning, edit the 'backto' year below.
 """
 
 backto = 2005
