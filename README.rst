@@ -11,7 +11,7 @@ Security Now has been running for several years and there are a few hundred epis
 How to use
 ----------
 
-- Download and run the ``generate-snarchive.py`` script.
+- Download this repository and run the ``generate-snarchive.py`` script.
 - Put the generated ``snarchive.xml`` file in your Dropbox/Google Drive/other cloud drive.
 - Create a public link to the file
 - Paste the link in your podcast player as RSS feed.
@@ -20,7 +20,7 @@ How to use
 Details
 -------
 
-Download this script. It requires a Python 3 interpreter and the following dependency modules: (Use e.g. ``pip3 install --user <modulename>`` to install modules)
+Download this repository and run the ``generate-snarchive.py`` script. It requires a Python 3 interpreter and the following dependency modules: (Use e.g. ``pip3 install --user <modulename>`` to install modules)
 
 - tzlocal
 - bs4 (BeautifulSoup 4)
