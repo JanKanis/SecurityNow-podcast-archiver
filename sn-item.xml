@@ -1,0 +1,19 @@
+<item>
+<title>SN $NR: $TITLE</title>
+<pubDate>$DATE</pubDate>
+<comments>http://twit.tv/sn/$NR</comments>
+<itunes:author>TWiT</itunes:author>
+<author>leo@twit.tv (Leo Laporte)</author>
+<category>Technology</category>
+<category>Security</category>
+<description>$DESCRIPTION</description>
+<guid isPermaLink="false">http://www.podtrac.com/pts/redirect.mp3/cdn.twit.tv/audio/sn/sn$NR4/sn$NR4.mp3</guid>
+<itunes:explicit>no</itunes:explicit>
+<itunes:duration>$DURATION</itunes:duration>
+<link>http://cdn.twit.tv/audio/sn/sn$NR4/sn$NR4.mp3</link>
+<enclosure url="http://cdn.twit.tv/audio/sn/sn$NR4/sn$NR4.mp3" length="0" type="audio/mpeg"/>
+<media:content url="http://cdn.twit.tv/audio/sn/sn$NR4/sn$NR4.mp3" fileSize="0" type="audio/mpeg" medium="audio">
+<media:rating scheme="urn:simple">nonadult</media:rating>
+<media:rating scheme="urn:v-chip">tv-g</media:rating>
+</media:content>
+</item>

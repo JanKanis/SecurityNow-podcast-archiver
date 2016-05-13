@@ -1,0 +1,55 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" version="2.0">
+<channel><title>Security Now Archive (MP3)</title>
+<link>http://twit.tv/sn</link>
+<generator>Security Now Archive Generator - http://bitbucket.org/JanKanis/snarchive</generator>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<language>en-US</language>
+<copyright>
+This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/
+</copyright>
+<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<managingEditor>leo@twit.tv (Leo Laporte)</managingEditor>
+<webMaster>leo@twit.tv (Leo Laporte)</webMaster>
+<ttl>720</ttl>
+<sy:updatePeriod>weekly</sy:updatePeriod>
+<sy:updateFrequency>1</sy:updateFrequency>
+<lastBuildDate>$NOW</lastBuildDate>
+<pubDate>$NOW</pubDate>
+<category>Technology</category>
+<category>Security</category>
+<image>
+<title>Security Now Archive (MP3)</title>
+<url>http://twit.cachefly.net/coverart/sn/sn144audio.jpg</url>
+<link>http://twit.tv/sn</link>
+<width>144</width>
+<height>144</height>
+</image>
+<itunes:author>TWiT</itunes:author>
+<itunes:subtitle>Steve Gibson, the man who coined the term spyware and created the first anti-spyware program, creator of Spinrite and ShieldsUP, discusses the hot topics in security today with Leo Laporte.</itunes:subtitle>
+<itunes:summary>
+Steve Gibson, the man who coined the term spyware and created the first anti-spyware program, creator of Spinrite and ShieldsUP, discusses the hot topics in security today with Leo Laporte. Winner of the 2009 and 2007 people's choice award for best Technology/Science podcast.
+Records live at https://twit.tv/live every Tuesday at 4:30pm Eastern / 1:30pm Pacific / 20:30 UTC.
+</itunes:summary>
+<description>
+Steve Gibson, the man who coined the term spyware and created the first anti-spyware program, creator of Spinrite and ShieldsUP, discusses the hot topics in security today with Leo Laporte. Winner of the 2009 and 2007 people's choice award for best Technology/Science podcast.
+Records live at https://twit.tv/live every Tuesday at 4:30pm Eastern / 1:30pm Pacific / 20:30 UTC.
+</description>
+<itunes:keywords>
+Steve Gibson, Leo Laporte, security, spyware, malware, hacking, cyber crime, encryption
+</itunes:keywords>
+<itunes:explicit>no</itunes:explicit>
+<itunes:owner>
+<itunes:name>Leo Laporte</itunes:name>
+<itunes:email>leo@twit.tv</itunes:email>
+</itunes:owner>
+<itunes:block>no</itunes:block>
+<itunes:image href="http://twit.cachefly.net/coverart/sn/sn1400audio.jpg" />
+<itunes:category text="Technology">
+<itunes:category text="Tech News"/>
+</itunes:category>
+<itunes:category text="Technology">
+<itunes:category text="Software How-To"/>
+</itunes:category>
+$ITEMS
+</channel>
+</rss>
