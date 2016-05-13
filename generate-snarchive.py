@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-# license: GPLv3 or later
+#
+# © Jan Kanis 2016
+# Available under the MIT license:
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 """
 Usage: 
@@ -7,12 +15,10 @@ Usage:
 - put the generated snarchive.xml file in a public Dropbox/Google Drive/other cloud drive folder
 - point your podcast player at the link of the file
 
-To generate a longer archive, add the urls of the older archive pages to the 'urls' list below.
+To generate a shorter archive not going back to the beginning, edit the 'backto' year in this script
 """
 
 backto = 2005
-#urls = ['https://www.grc.com/securitynow.html', 'https://www.grc.com/sn/past/2014', 'https://www.grc.com/sn/past/2013', 'https://www.grc.com/sn/past/2012']
-
 output = 'snarchive.xml'
 
 
