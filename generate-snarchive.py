@@ -100,10 +100,15 @@ def item_rss(links):
   for episode in find_episodes(links):
     minutes = episode['minutes']
     duration = "{}:{}:00".format(minutes//60, minutes%60)
+
+    # Some old episodes use 'Sept' instead of 'Sep' for the month, and my podcast listener doesn't like that.
+    date = episode['date'].split(' ')
+    date[1] = date[1][:3]
+    date = ' '.join(date)
     yield episode['nr'], itemtemplate.substitute(
       NR=esc(str(episode['nr'])),
       NR4=esc(str(episode['nr']).rjust(4, '0')),
-      DATE=esc(episode['date']),
+      DATE=esc(date),
       DURATION=esc(duration),
       TITLE=esc(episode['title']),
       DESCRIPTION=esc(episode['description']))
@@ -123,6 +128,8 @@ def generate_rss(links):
   if episodes:
     out = open(output, 'w')
     out.write(template.substitute(NOW=nowfmt, ITEMS=''.join(episodes)))
+    print("\n\nCreated "+output)
+    print("Put {} on a cloud drive (Dropbox, Google Drive, etc), create a link, and put the link in your podcast player".format(output))
   else:
     print("\nError: No episodes found!")
 
