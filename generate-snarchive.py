@@ -126,7 +126,7 @@ def generate_rss(links):
     episodes.append(episode_rss)
 
   if episodes:
-    out = open(output, 'w')
+    out = open(output, 'w', encoding="utf-8")
     out.write(template.substitute(NOW=nowfmt, ITEMS=''.join(episodes)))
     print("\n\nCreated "+output)
     print("Put {} on a cloud drive (Dropbox, Google Drive, etc), create a link, and put the link in your podcast player".format(output))
