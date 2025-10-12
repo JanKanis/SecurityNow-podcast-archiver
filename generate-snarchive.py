@@ -96,17 +96,18 @@ def get_item(soup, item):
               description=description)
 
 
-def parse_episode_date(dateStr):
+def parse_episode_date(date):
     # Some episodes use 'June', 'July', or 'Sept' for the month, which date parsers don't like.
-    dateParts = dateStr.split(' ')
-    dateParts[1] = dateParts[1][:3]
-    dateStr = ' '.join(dateParts)
+    dateparts = date.split(' ')
+    dateparts[1] = dateparts[1][:3]
+    date = ' '.join(dateparts)
 
     # Convert the date string into a proper RSS pubdate
-    dt = datetime.datetime.strptime(dateStr, "%d %b %Y")
+    pubdate = datetime.datetime.strptime(date, "%d %b %Y").date()
     # The time doesn't really matter, so pretend it was published at 11 PM UTC (3/4 PM PT).
-    pubdate = dt.combine(dt.date(), datetime.time(hour=23), tzinfo=datetime.UTC)
-    return pubdate.strftime("%a, %d %b %Y %H:%M:%S %z")
+    pubtime = datetime.time(hour=23)
+    pubdatetime = datetime.datetime.combine(pubdate, pubtime, tzinfo=datetime.UTC)
+    return pubdatetime.strftime("%a, %d %b %Y %H:%M:%S %z")
 
 
 def item_rss(links):
