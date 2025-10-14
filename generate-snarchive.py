@@ -106,7 +106,7 @@ def parse_episode_date(date):
     pubdate = datetime.datetime.strptime(date, "%d %b %Y").date()
     # The time doesn't really matter, so pretend it was published at 11 PM UTC (3/4 PM PT).
     pubtime = datetime.time(hour=23)
-    pubdatetime = datetime.datetime.combine(pubdate, pubtime, tzinfo=datetime.UTC)
+    pubdatetime = datetime.datetime.combine(pubdate, pubtime, tzinfo=datetime.timezone.utc)
     return pubdatetime.strftime("%a, %d %b %Y %H:%M:%S %z")
 
 
